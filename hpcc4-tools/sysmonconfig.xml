@@ -1,0 +1,9 @@
+<Sysmon schemaversion="4.91">
+  <HashAlgorithms>sha256</HashAlgorithms>
+  <EventFiltering>
+    <!-- An empty "exclude" logs every event of that type. -->
+    <ProcessCreate onmatch="exclude"/>
+    <NetworkConnect onmatch="exclude"/>
+    <DnsQuery onmatch="exclude"/>
+  </EventFiltering>
+</Sysmon>
